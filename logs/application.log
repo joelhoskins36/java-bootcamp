@@ -1,0 +1,53 @@
+2026-09-08 12:10:57 ERROR Invalid PIN entered.
+InvalidPinException Invalid PIN entered.
+[com.academy.atm.ATMService.login(ATMService.java:58), com.academy.atm.Main.main(Main.java:32)]
+2026-09-08 12:11:05 ERROR Account not found: 1234
+AccountNotFoundException Account not found: 1234
+[com.academy.atm.ATMService.findAccount(ATMService.java:207), com.academy.atm.ATMService.login(ATMService.java:52), com.academy.atm.Main.main(Main.java:32)]
+2026-09-08 12:11:15 INFO Login successful for account 1001
+2026-09-08 12:14:57 ERROR Invalid PIN entered.
+InvalidPinException Invalid PIN entered.
+[com.academy.atm.ATMService.login(ATMService.java:58), com.academy.atm.Main.main(Main.java:32)]
+2026-09-08 12:15:00 ERROR Account not found: 123897
+AccountNotFoundException Account not found: 123897
+[com.academy.atm.ATMService.findAccount(ATMService.java:216), com.academy.atm.ATMService.login(ATMService.java:52), com.academy.atm.Main.main(Main.java:32)]
+2026-09-08 12:15:08 ERROR Invalid PIN entered.
+InvalidPinException Invalid PIN entered.
+[com.academy.atm.ATMService.login(ATMService.java:58), com.academy.atm.Main.main(Main.java:32)]
+2026-09-08 12:15:19 ERROR Invalid PIN entered.
+InvalidPinException Invalid PIN entered.
+[com.academy.atm.ATMService.login(ATMService.java:58), com.academy.atm.Main.main(Main.java:32)]
+2026-09-08 12:15:27 ERROR Invalid PIN entered.
+InvalidPinException Invalid PIN entered.
+[com.academy.atm.ATMService.login(ATMService.java:58), com.academy.atm.Main.main(Main.java:32)]
+2026-09-08 12:15:35 INFO Login successful for account 1001
+2026-09-08 12:17:32 INFO Login successful for account 1001
+2026-09-08 12:17:37 ERROR Amount must be greater than zero.
+InvalidAmountException Amount must be greater than zero.
+[com.academy.atm.Account.deposit(Account.java:39), com.academy.atm.ATMService.lambda$deposit$0(ATMService.java:81), com.academy.atm.ATMService.executeTransaction(ATMService.java:166), com.academy.atm.ATMService.deposit(ATMService.java:78), com.academy.atm.Main.main(Main.java:33)]
+2026-09-08 12:17:44 INFO Deposit completed successfully | Execution Time: 4149 ms
+2026-09-08 12:17:49 INFO Balance Inquiry completed successfully | Execution Time: 0 ms
+2026-09-08 12:17:59 ERROR Requested 1.29837129837E11 Balance 12213.0
+InsufficientFundsException Transaction Failed. Insufficient Account Balance.
+[com.academy.atm.Account.withdraw(Account.java:50), com.academy.atm.ATMService.lambda$withdraw$1(ATMService.java:92), com.academy.atm.ATMService.executeTransaction(ATMService.java:166), com.academy.atm.ATMService.withdraw(ATMService.java:89), com.academy.atm.Main.main(Main.java:34)]
+2026-09-08 12:18:06 INFO Withdraw completed successfully | Execution Time: 2363 ms
+2026-09-08 12:18:16 ERROR Unable to read transaction history
+FileNotFoundException transactions.txt (The system cannot find the file specified)
+[java.base/java.io.FileInputStream.open0(Native Method), java.base/java.io.FileInputStream.open(FileInputStream.java:213), java.base/java.io.FileInputStream.<init>(FileInputStream.java:152), java.base/java.io.FileInputStream.<init>(FileInputStream.java:106), java.base/java.io.FileReader.<init>(FileReader.java:60), com.academy.atm.ATMService.loadTransactionsFromFile(ATMService.java:204), com.academy.atm.ATMService.lambda$displayMiniStatement$4(ATMService.java:119), com.academy.atm.ATMService.executeTransaction(ATMService.java:166), com.academy.atm.ATMService.displayMiniStatement(ATMService.java:110), com.academy.atm.Main.main(Main.java:37)]
+2026-09-08 12:18:16 INFO Mini Statement completed successfully | Execution Time: 2 ms
+2026-09-08 12:21:00 INFO Login successful for account 1001
+2026-09-08 12:21:03 INFO Deposit completed successfully | Execution Time: 1727 ms
+2026-09-08 12:21:12 INFO Transfer completed successfully | Execution Time: 5456 ms
+2026-09-08 12:21:25 ERROR Unable to read transaction history
+FileNotFoundException transactions.txt (The system cannot find the file specified)
+[java.base/java.io.FileInputStream.open0(Native Method), java.base/java.io.FileInputStream.open(FileInputStream.java:213), java.base/java.io.FileInputStream.<init>(FileInputStream.java:152), java.base/java.io.FileInputStream.<init>(FileInputStream.java:106), java.base/java.io.FileReader.<init>(FileReader.java:60), com.academy.atm.ATMService.loadTransactionsFromFile(ATMService.java:231), com.academy.atm.ATMService.lambda$displayMiniStatement$5(ATMService.java:146), com.academy.atm.ATMService.executeTransaction(ATMService.java:193), com.academy.atm.ATMService.displayMiniStatement(ATMService.java:137), com.academy.atm.Main.main(Main.java:37)]
+2026-09-08 12:21:25 INFO Mini Statement completed successfully | Execution Time: 2 ms
+2026-09-08 12:21:38 ERROR NullPointerException demonstration
+NullPointerException Cannot invoke "com.academy.atm.Account.getBalance()" because "account" is null
+[com.academy.atm.ATMService.demonstrateUncheckedExceptions(ATMService.java:155), com.academy.atm.Main.main(Main.java:44)]
+2026-09-08 12:21:38 ERROR ArithmeticException demonstration
+ArithmeticException / by zero
+[com.academy.atm.ATMService.demonstrateUncheckedExceptions(ATMService.java:162), com.academy.atm.Main.main(Main.java:44)]
+2026-09-08 12:21:38 ERROR ArrayIndexOutOfBoundsException demonstration
+ArrayIndexOutOfBoundsException Index 10 out of bounds for length 3
+[com.academy.atm.ATMService.demonstrateUncheckedExceptions(ATMService.java:171), com.academy.atm.Main.main(Main.java:44)]
